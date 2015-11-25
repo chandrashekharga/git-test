@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Angular Sample</title>
+		<link rel="stylesheet" type="text/css" href="css/myFile.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/billing.css"/>-->
+		<!--<link rel="stylesheet" href="libs/bootstrap.css">	-->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="libs/jquery.js"></script>
+		<script src="libs/jquery.min.js"></script>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		
+		<script src="libs/angular/angular-route.js"></script>
+		
+		<script src="js/main.js"></script>
+
+		<script src="js/controller/taskController.js"></script>
+		<script src="js/controller/entryController.js"></script>
+		<script src="js/controller/projectDetailController.js"></script>
+		<script src="js/controller/backlogController.js"></script>
+		<script src="js/controller/projectController.js"></script>
+		<script src="js/controller/resourceController.js"></script>
+		<script src="js/Services/projectService.js"></script>
+		<script src="libs/bootstrap.min.js"></script>
+	</head>
+
+	<body ng-app='appModule' >
+	<div id="container">
+		<div ng-view >
+		</div>
+		<footer></footer>
+		</div>
+		
+	</body>
+</html>

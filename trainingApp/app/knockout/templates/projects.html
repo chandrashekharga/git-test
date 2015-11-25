@@ -1,0 +1,9 @@
+<h1 class="page-header">Projects </h1>
+
+<div id="projectContainer" class="list-group wizard-menu">
+ <ul data-bind="foreach: project">
+	<a class="list-group-item-heading" data-bind="attr: { href:'#projects/'+id+'/resources', title: 'Resources,Backlogs & Details of Project' }" >
+	<span data-bind="text: name" class="project"></span>
+</a><br>
+</ul>
+</div>

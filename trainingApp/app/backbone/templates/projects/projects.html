@@ -1,0 +1,10 @@
+<h1 class="page-header">Projects Dashboard</h1>
+
+	<%_.each(list, function(user) { console.log(user);%>
+	<div class="list-group wizard-menu">
+		<a class="list-group-item-heading" href="#projects/<%= user.id %>/resources">
+			<li class="list-group-item"><%= user.name %></li>
+		</a>
+	<%
+	}); %>
+</div>

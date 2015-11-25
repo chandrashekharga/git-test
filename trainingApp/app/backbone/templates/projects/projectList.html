@@ -1,0 +1,8 @@
+<div>
+	<%= _.each(list, function(user){ %>
+		<strong>ID:	</strong><%= user.id %>
+		<strong>Created Time:	</strong><%= user.createdttm%>
+		<strong>Description:	</strong><ol><li><%= user.description %></li></ol>
+		<strong>Name:	</strong><%= user.name %>
+	<%= }); %>
+</div>

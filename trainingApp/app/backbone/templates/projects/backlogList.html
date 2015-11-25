@@ -1,0 +1,21 @@
+<div>
+    <%_.each(backloglist, function(backlog) {%>
+        <li class="list-group-item">
+            <a href="#projects/<%= pid %>/backlogs/<%= backlog.id %>/tasks">
+                <strong>Backlog Id:</strong> 
+                <%=backlog.id %> <br>
+            </a>
+            <strong>Createdttm:</strong>
+            <%=backlog.createdttm%></br>
+            <strong>Description:</strong>
+                <ol>
+                    <li>
+                        <%=backlog.description %>
+                    </li>
+                </ol>
+                </br>
+                <strong>Name:</strong>
+            <%=backlog.name %>
+        </li>
+        <% }); %>
+</div>

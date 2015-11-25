@@ -1,0 +1,20 @@
+<h1 class="page-header">Tasks <div class="homed">  <a href="http://localhost:3000/knockout/" class="home">Home</a></div></h1>
+
+
+<div id="taskContainer" class="list-group wizard-menu">
+
+ <ul data-bind="foreach: tasks">
+	<p class="label">Task Name:&nbsp;&nbsp;<a class="list-group-item-heading" data-bind="attr: { href:'#projects/'+$root.pid+'/backlogs/'+$root.bid+'/tasks/'+id+'/entries', title: 'Entry detail of tasks' }" >
+	<span data-bind="text: name" ></span>	</a></p>
+ <p class="label">Task Id:&nbsp;&nbsp;<span data-bind="text: id" class="dataspan"></span></p>
+ <p class="label">Time Created :&nbsp;&nbsp; <span data-bind="text: createdttm" class="dataspan"></span></p>
+ <p class="label">Estimated Time:&nbsp;&nbsp;<span data-bind="text: estimatedTime" class="dataspan"></span></p>
+  <p class="label">Status:&nbsp;&nbsp;<span data-bind="text: status" class="dataspan"></span></p>
+  <p class="label">Assigned To:&nbsp;&nbsp;<span data-bind="text: assignedTo" class="dataspan"></span></p>
+  <p class="label">Description:&nbsp;&nbsp; <span data-bind="html: description" class="dataspan"></span></p><br><hr>
+   
+</a><br>
+
+</ul>
+
+</div>

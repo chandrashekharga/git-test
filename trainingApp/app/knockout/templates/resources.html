@@ -1,0 +1,40 @@
+<h1 class="page-header">Resources <div class="homed">  <a href="http://localhost:3000/knockout/" class="home">Home</a></div></h1>
+
+<div id="resourceContainer" class="list-group wizard-menu">
+
+ <ul data-bind="foreach: resources">
+
+<p class="label">Resource id :&nbsp;&nbsp; <span data-bind="text: id" class="dataspan"></span><br></p>
+<p class="label">First Name :&nbsp;&nbsp; <span data-bind="text: firstName"class="dataspan"></span><br></p>
+<p class="label">Last Name :&nbsp;&nbsp; <span data-bind="text: lastName"class="dataspan"></span><br></p>
+<p class="label">email-id :&nbsp;&nbsp; <span data-bind="text: email"class="dataspan"></span><br></p><hr>
+</a><br>
+
+</ul>
+
+</div>
+<script>
+
+</script>
+<h1 class="page-header">Backlogs</h1>
+
+<div id="backlogContainer" class="list-group wizard-menu">
+
+ <ul data-bind="foreach: backlogs">
+ 	<p class="label">Backlog name :&nbsp;&nbsp; <a class="list-group-item-heading" data-bind="attr: { href:'#projects/'+$root.pid+'/backlogs/'+id+'/tasks', title: 'Tasks' }" >
+	<span data-bind="text: name"></span>	</a><br></p>
+	<p class="label">Backlog id :&nbsp;&nbsp; <span data-bind="text: id"class="dataspan"></span></p>
+	<p class="label">Created time :&nbsp;&nbsp; 	<span data-bind="text: createdttm"class="dataspan"></span><br></p>
+	<p class="label">Description :&nbsp;&nbsp; 		<span data-bind="html: description"class="dataspan"></span>	<br></p><hr>
+</ul>
+	
+
+</div>
+
+
+<h1 class="page-header">Project Details</h1>
+<div id="projectDetailContainer" class="list-group wizard-menu">
+<p class="label">Project id :&nbsp;&nbsp; <span data-bind="text: id"class="dataspan"></span><br></p>
+<p class="label">Project name :&nbsp;&nbsp; <span data-bind="text: name"class="dataspan"></span><br></p>
+<p class="label">Description :&nbsp;&nbsp; <span data-bind="html: description"class="dataspan"></span><br></p><hr>
+</div>

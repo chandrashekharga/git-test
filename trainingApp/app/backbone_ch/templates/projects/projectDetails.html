@@ -1,0 +1,52 @@
+
+
+
+<!--<div> hello resources <%= name %> </div>-->
+	<div class="container">
+			<h1 class="text">
+						<div class="Container">
+														<span text-align="center">Project Details</span>
+						</div>
+			</h1>
+			<div class="panel panel-default">
+						  <!-- Default panel contents -->
+							
+						 <div class="panel-heading" >
+																	
+																					<b>
+																							<%= projectDetails.name %> </b>
+						 </div>
+						  <div class="panel-body">
+							<table  class="table table-hover">
+																					 
+																						<tr>
+																								<td>
+																										<h4>Id</h4>
+																								</td>
+																						 																				
+																								<td>
+																										<%= projectDetails.id %>	
+																								</td>																																									
+																						 
+																						</tr> 
+																						<tr>
+																										<td>
+																											<h4>DESCRIPTION
+																										 </td>
+																										 <td>
+																												<%= projectDetails.description %>
+																										 </td>
+																						 
+																						 </tr> 
+																							</table>   
+						  </div>
+						
+			</div>
+		 
+			<p><span><a href="#projects/<%= projectDetails.id %>/resources"/ role="button" class="btn btn-primary">Resources</a> </span>
+			<span><a href="#projects/<%= projectDetails.id %>/backlogs" class="btn btn-primary" role="button">Backlogs</a></span>
+									     
+
+        </div>
+
+		</div>

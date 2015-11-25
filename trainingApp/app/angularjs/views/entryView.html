@@ -1,0 +1,25 @@
+<header>
+    <h1 class="logo" class="h11">Entry Details <a class="home" href="/angularjs">Home</a></h1>
+</header>
+<div class="cont">
+    <ul class="underline" ng-repeat='entry in entries'>
+        <div class="timestamp">
+            <strong>Entry Timestamp</strong>&nbsp:&nbsp&nbsp{{entry.timestamp}}
+            <br/>
+            <strong>Entry Timespent</strong>&nbsp:&nbsp&nbsp{{entry.timeSpent}}
+            <br/>
+            <strong>Entry Timeremaining</strong>&nbsp:&nbsp&nbsp{{entry.timeRemaining}}
+            <br/>
+        </div>
+        <strong>Entry Id</strong>&nbsp:&nbsp&nbsp{{entry.id}}
+        <br/>
+        <strong>Entries Task Id</strong>&nbsp:&nbsp&nbsp{{entry.tid}}
+        <br/>
+        <strong>Entry Comments</strong>&nbsp:&nbsp&nbsp
+        <div ng-bind-html-unsafe="entry.comments"></div>
+        <br/>
+    </ul>
+    <br/>
+    <br/>
+</div>
+<footer></footer>

@@ -1,0 +1,57 @@
+/* YesMail specific styles for opentip */
+
+.style-ymTooltip .opentip {
+    color: #000;
+    font-size: 12px;
+    padding: 0 1px;
+    text-shadow: none;
+}
+
+.anchor-indicator {
+    outline: 2px solid black;
+}
+
+.image-map-indicator {
+    outline: 2px solid black;
+    position: absolute;
+}
+
+.indicator-color-0 {
+     outline-color: #000000;
+}
+
+.indicator-color-1 {
+     outline-color: #1893d6;
+}
+
+.indicator-color-2 {
+     outline-color: #18d3d6;
+}
+
+.indicator-color-3 {
+     outline-color: #18d687;
+}
+
+.indicator-color-4 {
+     outline-color: #77d618;
+}
+
+.indicator-color-5 {
+     outline-color: #c6d618;
+}
+
+.indicator-color-6 {
+     outline-color: #eded0c;
+}
+
+.indicator-color-7 {
+     outline-color: #edb10c;
+}
+
+.indicator-color-8 {
+     outline-color: #ed6a0c;
+}
+
+.indicator-color-9 {
+     outline-color: #ed0c0c;
+}

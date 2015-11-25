@@ -1,0 +1,100 @@
+ <div id="Resourses">
+
+<div class="Navigation">
+<span>&nbsp;&nbsp;Project Details</span>
+</div>
+
+ 
+	<div class="col2">
+	<div class="subtitle">
+
+       <h1 class="text">Backlogs</h1>
+     </div>
+    <div id="wrapper1">		
+		 
+		    <div class="table">
+	 
+        
+	            <table  class="table table-hover">
+				<% _.each(backlogslist,function(backlogslist) { %> 
+           
+			
+			<tr>
+			<td>
+					<div class="bigbox">
+					<div class="box">
+				         <div class="projectTitle">
+				            <a href="#resource/<%= backlogslist.id %>" > <%= backlogslist.firstName %> </a>
+					     </div>
+					     <div class="projectDesc">
+						  <p><%= backlogslist.id %></p>
+						   <p><%= backlogslist.name %></p>
+							<p><%= backlogslist.createdttm %></p>
+							  <%= backlogslist.description %>
+							  
+		     
+					     </div>
+				     </div>
+					 </div>
+					 </td>
+				</tr>
+ <% }); %>
+		       
+				</table>       
+				</div>     
+		 	
+	</div>
+	</div>
+	<div class="col3">
+	    <div class="subtitle">
+
+        <h1 class="text">Details</h1>
+         </div>
+         <div id="wrapper1">		
+		 
+		    <div class="table">
+	 
+        
+	            <table  class="table table-hover">
+		       <tr>
+                   <td >
+				          
+				         <div class="bigbox">
+					      <div class="box1">
+				         
+					     <div class="Description">
+					 
+					     </div>
+				          </div>
+					       
+					   </div>
+		            
+				       
+				     </td>
+				</tr>
+		     </table>
+		 </div>  
+       	</div>	
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

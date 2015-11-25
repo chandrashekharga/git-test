@@ -1,0 +1,19 @@
+<h1 class="page-header">Tasks Entries <div class="homed"> <a href="http://localhost:3000/knockout/" class="home">Home</a></div></h1>
+
+
+<div id="entriesContainer" class="list-group wizard-menu">
+
+ <ul data-bind="foreach: entries">
+
+<p class="label">Entry id :&nbsp;&nbsp; <span data-bind="text: id"class="dataspan"></span></p>
+<p class="label">Task id :&nbsp;&nbsp; <span data-bind="text: tid"class="dataspan"></span></p>
+<p class="label">Time Stamp :&nbsp;&nbsp;    <span data-bind="text: timestamp"class="dataspan"></span></p>
+<p class="label">Time Spent :&nbsp;&nbsp; <span data-bind="text: timeSpent"class="dataspan"></span></p>
+<p class="label">Time Remaining :&nbsp;&nbsp; 	<span data-bind="text: timeRemaining"class="dataspan"></span></p>
+<p class="label">Comments :&nbsp;&nbsp; <span data-bind="html: comments"class="dataspan"></span><hr></p>
+
+</a><br>
+
+</ul>
+
+</div>

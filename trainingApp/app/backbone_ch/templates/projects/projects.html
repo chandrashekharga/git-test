@@ -1,0 +1,38 @@
+
+<div class="subtitle">
+
+<h1 class="text">Projects</h1>
+</div>
+<div id="wrapper">
+<table border="1">
+ <% _.each(projectlist,function(projectList) { %> 
+          
+			
+			<tr>
+			<td>
+					<div class="bigbox">
+					<div class="box">
+				         <div class="projectTitle">
+				            <a href="#projects/<%= projectList.id %>" > <%= projectList.name %> </a>
+					     </div>
+					     <div class="projectDesc">
+							<%= projectList.description %>
+					     </div>
+				     </div>
+					 <div class="boxfooter">
+	                     			
+		                <div class="btn-group">
+                                   <button type="button" class="btn btn-default">Add</button>
+                                   <button type="button" class="btn btn-default">Update</button>
+                                   <button type="button" class="btn btn-default">Delete</button>
+                        </div>
+                         
+		            
+				       </div> 
+					   </div>
+					   </td>
+			     	</tr>
+				
+        <% }); %>
+</table>		
+</div>

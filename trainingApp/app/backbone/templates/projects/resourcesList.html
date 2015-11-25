@@ -1,0 +1,13 @@
+<ul class="list-group">
+
+	<%_.each(resourceslist, function(resource) { console.log(resource);%>
+		<li class="list-group-item">
+			<strong>Resource ID:	</strong><%= resource.id %></br>
+			<strong>First Name:	</strong><%= resource.firstName%></br> 
+			<strong>Last Name:	</strong> <%= resource.lastName%> </br>
+			<strong>Email:	</strong> <%= resource.email%></br>
+		</li>
+	<%
+	}); %>
+
+</ul>

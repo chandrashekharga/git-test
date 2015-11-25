@@ -1,0 +1,20 @@
+<ul class="list-group">
+	<h3>Entry Details<div class="home"><a href="http://localhost:3000/backbone/" >Home</a><div></h3>
+	<%_.each(entriesList, function(entries) { %>
+	<li class="list-group-item">
+		<div class="timestamp">
+			<strong>Time Stamp:	</strong><%= entries.timestamp%> </br>
+			<strong>Time Spent:	</strong><%= entries.timeSpent%></br>
+			<strong>Time Remaining:	</strong><%= entries.timeRemaining%>
+		</div>
+		</br>
+		<strong>Entries ID:	</strong><%= entries.id %></br>
+		<strong>Entries Task ID:	</strong><%= entries.tid%> </br>
+		<strong>Comments:	</strong><%= entries.comments%></br>
+	</li>
+	<%
+	}); %>
+</ul>
+
+
+

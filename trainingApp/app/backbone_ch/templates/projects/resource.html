@@ -1,0 +1,23 @@
+<div>
+<table border="1">
+ <% _.each(resourcelist,function(resourceslist) { %> 
+           
+			
+			<tr>
+			<td>
+					<div class="bigbox">
+					<div class="box">
+				         <div class="projectTitle">
+				            <a href="#resource/<%= resourceslist.id %>" > <%= resourceslist.firstName %> </a>
+					     </div>
+					     <div class="projectDesc">
+						  <p>id:<%= resourceslist.id %></p>
+						   <p><%= resourceslist.firstName %></p>
+							<p><%= resourceslist.lastName %></p>
+							  <%= resourceslist.email %>
+					     </div>
+				     </div>
+ <% }); %>
+ </table>
+ </div>
+ </div>

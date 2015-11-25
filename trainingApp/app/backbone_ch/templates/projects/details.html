@@ -1,0 +1,158 @@
+ <div id="Resourses">
+
+
+<div class="container">
+<h1 class="text"><div class="Container">
+Project Details
+</div>
+</h1>
+<div class="row">
+					  <div class="col-md-4">
+								 <div class="page-header">
+										<h1>Resources <small></small></h1>
+								 </div>
+								<div id="wrapper1">				
+										<div class="table">
+   
+		
+		
+		  
+	 
+        
+														<table  class="table table-hover">
+																
+																   <% _.each(responseObject.resourcelist,function(resourcelist) { %> 
+												   
+													
+													<tr>
+													<td>
+															<div class="bigbox">
+																	<div class="box">
+																		 <div class="projectTitle">
+																		
+																					<a href="#resource/<%= resourcelist.id %>" > <%= resourcelist.firstName %> </a>
+																		 </div>
+																		 <div class="projectDesc">
+																						<p><%= resourcelist.id %></p>
+																						<p><%= resourcelist.firstName %></p>
+																						<p><%= resourcelist.lastName %></p>
+																						<%= resourcelist.email %>
+																		 </div>
+																	</div>
+															  </div>
+													</td>
+												</tr>
+												<% }); %>
+														
+														
+														  
+														</table>
+        							</div>  
+								</div>
+											
+								<p><a href="#" class="btn btn-primary" role="button">ADD</a> <a href="#" class="btn btn-primary" role="button">UPDATE</a>
+									<a href="#" class="btn btn-primary" role="button">DELETE</a> 
+								</p>
+				</div>
+          
+	 <div class="col-md-4">
+	<div class="page-header">
+										<h1>Backlogs <small></small></h1>
+								 </div>
+    <div id="wrapper1">		
+		 
+		    <div class="table">
+	 
+        
+	            <table  class="table table-hover">
+				
+				<% _.each(responseObject.backlogslist,function(backlogslist) { %> 
+           
+			
+			<tr>
+			<td>
+					<div class="bigbox">
+					<div class="box">
+				         <div class="projectTitle backlogHead">
+						  <h3><span><a href="#projects/<%= responseObject.pid %>/backlogs/<%= backlogslist.id %>/tasks" data-bid="<%= backlogslist.id %>" ><%= backlogslist.name %></a></span></h3>
+				            <a href="#resource/<%= backlogslist.id %>" > </a><%= backlogslist.firstName %> 
+					     </div>
+					     <div class="projectDesc">
+						  <p><%= backlogslist.id %></p>
+						   <p><%= backlogslist.name %></p>
+							<p><%= backlogslist.createdttm %></p>
+							  <%= backlogslist.description %>
+							  
+		     
+					     </div>
+				     </div>
+					 </div>
+					 </td>
+				</tr>
+ <% }); %>
+		       
+				</table>       
+				</div>   
+			
+		 	
+	</div>
+	<p><a href="#" class="btn btn-primary" role="button">ADD</a> <a href="#" class="btn btn-primary" role="button">UPDATE</a>
+									<a href="#" class="btn btn-primary" role="button">DELETE</a> 
+								</p>
+	</div>
+	 <div class="col-md-4">
+	    <div class="page-header">
+										<h1>Details<small></small></h1>
+								 </div>
+        <div id="wrapper1">		
+		    <div class="table">
+	            <table  class="table table-hover">
+		        <tr>
+                    <td >
+				    <div class="bigbox">
+					    
+							<div class="TaskDescription">
+							<% _.each(responseObject.tasklist,function(tasklist) { %> 
+								<p><%= tasklist.id %></p>
+						   <p><%= tasklist.createdttm %></p>
+							<p><%= tasklist.estimatedTime %></p>
+							  <p><%= tasklist.status %></p>
+							 <p><%= tasklist.name %></p>
+							 <p><%= tasklist.description %></p>
+							 <p><%= tasklist.assignedTo %></p>
+							  <% }); %>
+							</div>
+				        </div>
+					
+		            </td>
+				</tr>
+		        </table>
+			</div>  
+       	</div>	
+		<p><a href="#" class="btn btn-primary" role="button">ADD</a> <a href="#" class="btn btn-primary" role="button">UPDATE</a>
+									<a href="#" class="btn btn-primary" role="button">DELETE</a> 
+								</p>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

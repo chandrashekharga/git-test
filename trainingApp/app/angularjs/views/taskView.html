@@ -1,0 +1,48 @@
+<header>
+    <h1 class="logo" class="h11">Task Details <a class="home" href="/angularjs">Home</a></h1>
+</header>
+<div class="cont">
+    <ul >
+        <div class="panel-group" id="accordion">
+            <div ng-repeat='task in tasks' class="panel panel-default">
+                <div class="panel-heading" style="background-color: #213102;border-color: #ddd;">
+                    <div class="defaultblock">
+                        <a class="anchor" data-toggle="collapse" data-parent="#accordion" href="#{{task.id}}">		 
+				{{task.name}}
+				</a>
+                    </div>
+                    <div class="col-sm-9 col-md-9" class="welldone">
+                    </div>
+                </div>
+                <div id="{{task.id}}" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                        <a class="anchor" ng-href="#/projects/{{pid}}/backlogs/{{bid}}/tasks/{{task.id}}/entries ">
+                            <ul>
+                                <li>
+                                    <strong>Task Id</strong>&nbsp:&nbsp&nbsp{{task.id}}
+                                </li>
+                            </ul>
+                        </a>
+                        <strong>Task Created time</strong>&nbsp:&nbsp&nbsp{{task.createdttm}}
+                        <br/>
+                        <br/>
+                        <strong>Task Estimated Time</strong>&nbsp:&nbsp&nbsp{{task.estimatedTime}}
+                        <br/>
+                        <br/>
+                        <strong>Task Status</strong>&nbsp:&nbsp&nbsp{{task.status}}
+                        <br/>
+                        <br/>
+                        <strong>Task Assigned To</strong>&nbsp:&nbsp&nbsp{{task.assignedTo}}
+                        <br/>
+                        <br/>
+                        <strong>Task Description</strong>&nbsp:&nbsp&nbsp
+                        <div ng-bind-html-unsafe="task.description"></div>
+                        <br/>
+                        <br/>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ul>
+</div>

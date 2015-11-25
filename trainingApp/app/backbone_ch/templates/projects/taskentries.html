@@ -1,0 +1,102 @@
+<div class="container">
+<div class="subtitle">
+
+<h1 class="text">Task Entries</h1>
+</div>
+<div id="wrapper">
+
+
+ <% _.each(taskentrieslist,function(taskentrieslist) { %> 
+           
+		<div class="panel panel-default">
+						  <!-- Default panel contents -->
+							
+						 <div class="panel-heading" >
+						  		  <a href="#projects/<%= pid %>/backlogs/<%= bid %>/tasks/<%= tid %>/entries/<%= taskentrieslist.id %>" ><h3><%= taskentrieslist.id %></h3></a>
+                           </div>
+						   <div class="panel-body">
+							<table  class="table table-hover">
+																					 
+																						<tr>
+																								<td>
+																										<h4>Id</h4>
+																								</td>
+																						 																				
+																								<td>
+																										<%= taskentrieslist.id %>	
+																								</td>																																									
+																						 
+																						</tr> 
+																						<tr>
+																										<td>
+																											<h4>Task id:</h4>
+																										 </td>
+																										 <td>
+																												<%= taskentrieslist.tid %>
+																										 </td>
+																						 
+																						 </tr> 
+																						 
+																						 <tr>
+																										<td>
+																											<h4>Timestamp:</h4>
+																										 </td>
+																										 <td>
+																												<%= taskentrieslist.timestamp %>
+																										 </td>
+																						 
+																						 </tr> 
+																						 
+																						  <tr>
+																										<td>
+																											<h4>TimeSpent:</h4>
+																										 </td>
+																										 <td>
+																											<%= taskentrieslist.timeSpent %>
+																										 </td>
+																						 
+																						 </tr> 
+																						  <tr>
+																										<td>
+																											<h4>TimeRemaining:</h4>
+																										 </td>
+																										 <td>
+																												<%= taskentrieslist.timeRemaining %>
+																										 </td>
+																						 
+																						 </tr> 
+																							</table>   
+						  </div>
+						
+		
+			
+					
+							<div class="panel panel-default">
+						  <!-- Default panel contents -->
+							
+						 <div class="panel-body" >
+						  		 <h3>Comments:</h3>
+                           </div>
+						   <div class="panel-body">
+						   <%= taskentrieslist.comments %>
+						   </div>
+						   </div>
+							
+						
+						        <div class="boxfooter">
+	                     			
+		                          <div class="btn-group">
+                                   <button type="button" class="btn btn-primary">Add</button>
+                                   <button type="button" class="btn btn-primary">Update</button>
+                                   <button type="button" class="btn btn-primary">Delete</button>
+								</div>
+                         
+		            
+								</div> 
+				
+ <% }); %>
+
+ </div>
+ </div>
+
+

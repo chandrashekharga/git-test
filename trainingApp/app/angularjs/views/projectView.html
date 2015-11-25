@@ -1,0 +1,41 @@
+<div class="body">
+    <div class="logo">
+        <img src="images/border1.png" class="border"></img>
+        </br>
+        <h1 class="h11"> Project Management System</h1>
+    </div>
+    <div ng-controller="projectDashboard" class="mainbody">
+        <div >
+            <div class="panel-group" id="accordion">
+                <div ng-repeat='project in data' class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #213102;border-color: #ddd;">
+                        <div class="defaultblock">
+                            <a class="anchor" data-toggle="collapse" data-parent="#accordion" href="#{{project.id}}">		 
+							{{project.name}}
+							</a>
+                            <div class="well">
+                                <h1 class="h12"> Project Details</h1>
+                                <ul>
+                                    <li><strong>Id</strong>&nbsp:&nbsp&nbsp{{project.id}}</li>
+                                    <li><strong>Name</strong>&nbsp:&nbsp&nbsp{{project.name}}</li>
+                                    <li><strong>Description</strong>&nbsp:&nbsp&nbsp
+                                        <div ng-bind-html-unsafe="project.description"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-md-9" class="welldone">
+                        </div>
+                    </div>
+                    <div id="{{project.id}}" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                            <a ng-href="#/projects/{{project.id}}/resources"><span class="resback">Resources</span></a>
+                            <br>
+                            <a ng-href="#/projects/{{project.id}}/backlogs"><span class="resback">Backlogs</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

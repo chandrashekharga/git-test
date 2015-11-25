@@ -1,0 +1,21 @@
+<div><span> hello resources <%=name %> </span>
+<table border="1">
+ <% _.each(projectlist,function(projectList) { %> 
+          
+			<div class="bigbox">
+					<div class="box">
+				         <div class="projectTitle">
+				            <a href="#projects/<%= projectList.id %>" > <%= projectList.name %> </a>
+					     </div>
+					     <div class="projectDesc">
+							<%= projectList.description %>
+					     </div>
+				     </div>
+					 
+                         
+		            
+				  
+        <% }); %>
+</table>		
+</div>
+</div>

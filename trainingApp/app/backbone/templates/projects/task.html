@@ -1,0 +1,18 @@
+
+<div class="tskdetail"><h3 >Task Details</h3></div>
+<hr>
+<ul class="list-group">
+	<%_.each(taskList, function(task) { %>
+		<li class="list-group-item">
+			<a href="#projects/<%= pid %>/backlogs/<%= bid %>/tasks/<%= task.id %>/entries" ><strong>Task ID:</strong><%= task.id %></a></br>
+			<strong>Created Time:</strong><%= task.createdttm%> </br>
+			<strong>Estimated Time:</strong><%= task.estimatedTime%> </br>
+			<strong>Status:</strong><%= task.status%></br>
+			<strong>Assigned TO:</strong><%= task.assignedTo%></br>
+			<strong>Description:</strong><%= task.description%></br>
+			<strong>Task Name:</strong> <%= task.name%></br>
+		</li>
+	<%
+	}); %>
+</ul>
+

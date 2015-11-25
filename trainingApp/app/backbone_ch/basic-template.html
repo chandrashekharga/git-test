@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/docs.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container"></div>
+     <div id="Dashboard">
+<div id='output'></div>
+<div class="Navigation">
+<span>&nbsp;&nbsp;Dashboard</span>
+</div>
+<div class="subtitle">
+
+<h1 class="text">Projects</h1>
+</div>
+
+<div id="wrapper">
+
+        
+
+    <div class="table">
+	 
+        
+	     <table  class="table table-hover">
+		        <tr>
+                    <td>
+					<div class="bigbox">
+					<div class="box">
+				         <div class="projectTitle">
+					 <% _.each(list,function(student) { %> 
+                    <ul class="ui-bar">
+              
+               <li><a href=""><%= student.name %></a></li>
+               <!--<td><%= student.id %></td>-->
+              
+            </ul> 
+        <% }); %>	
+					     </div>
+					     <div class="projectDesc">
+					 
+					     </div>
+				     </div>
+					 <div class="boxfooter">
+	                     			
+		                <div class="btn-group">
+                                   <button type="button" class="btn btn-default">Add</button>
+                                   <button type="button" class="btn btn-default">Update</button>
+                                   <button type="button" class="btn btn-default">Delete</button>
+                        </div>
+                         
+		            
+				       </div> 
+					   </div>
+			     	</td>
+				</tr>
+				<tr>
+                   <td >
+				          
+				         <div class="bigbox">
+					      <div class="box">
+				         <div class="projectTitle">
+					
+					     </div>
+					     <div class="projectDesc">
+					 
+					     </div>
+				          </div>
+					       <div class="boxfooter">
+	                     			
+		                <div class="btn-group">
+                                   <button type="button" class="btn btn-default">Add</button>
+                                   <button type="button" class="btn btn-default">Update</button>
+                                   <button type="button" class="btn btn-default">Delete</button>
+                        </div>
+                         
+		            
+				       </div> 
+					   </div>
+		            
+				       
+				   </td>
+				   </tr>
+				   <tr>
+                   <td>
+				          <div class="bigbox">
+					<div class="box">
+				         <div class="projectTitle">
+					
+					     </div>
+					     <div class="projectDesc">
+					 
+					     </div>
+				     </div>
+					 <div class="boxfooter">
+	                     			
+		                <div class="btn-group">
+                                   <button type="button" class="btn btn-default">Add</button>
+                                   <button type="button" class="btn btn-default">Update</button>
+                                   <button type="button" class="btn btn-default">Delete</button>
+                        </div>
+                         
+		            
+				       </div> 
+					   </div>
+				   </td>
+				   <tr>
+                   <td>
+				         <div class="bigbox">
+					<div class="box">
+				         <div class="projectTitle">
+					
+					     </div>
+					     <div class="projectDesc">
+					 
+					     </div>
+				     </div>
+					 <div class="boxfooter">
+	                     			
+		                <div class="btn-group">
+                                   <button type="button" class="btn btn-default">Add</button>
+                                   <button type="button" class="btn btn-default">Update</button>
+                                   <button type="button" class="btn btn-default">Delete</button>
+                        </div>
+                         
+		            
+				       </div> 
+					   </div>
+				   </td>
+				   </tr>
+             </table>
+        
+           
+        </div>
+	</div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+      <script src="js/script.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

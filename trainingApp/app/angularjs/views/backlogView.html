@@ -1,0 +1,40 @@
+<header>
+    <h1 class="logo" class="h11">Project Backlog <a class="home" href="/angularjs">Home</a></h1>
+</header>
+<div class="cont">
+    <ul>
+        <div class="panel-group" id="accordion">
+            <div  ng-repeat='backlog in backlogs' class="panel panel-default">
+                <div class="panel-heading" style="background-color: #213102;border-color: #ddd;">
+                    <div class="defaultblock">
+                        <a class="anchor" data-toggle="collapse" data-parent="#accordion" href="#{{backlog.id}}">		 
+						{{backlog.name}}
+					</a>
+                    </div>
+                    <div class="col-sm-9 col-md-9" class="welldone">
+                    </div>
+                </div>
+                <div id="{{backlog.id}}" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                        <a class="anchor" ng-href="#/projects/{{pid}}/backlogs/{{backlog.id}}/tasks">
+                            <strong>Backlog ID</strong>&nbsp:&nbsp&nbsp{{backlog.id}}
+                        </a>
+                        <br/>
+                        <strong>Created time</strong>&nbsp:&nbsp&nbsp{{backlog.createdttm}}
+                        <br/>
+                        <strong>Backlog name</strong>&nbsp:&nbsp&nbsp{{backlog.name}}
+                        <br/>
+                        <strong>Backlog Description</strong>&nbsp:&nbsp&nbsp
+                        <div ng-bind-html-unsafe="backlog.description"></div>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ul>
+    <br/>
+    <br/>
+</div>
+<footer></footer>
+
+
